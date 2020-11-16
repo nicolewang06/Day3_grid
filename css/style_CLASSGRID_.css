@@ -1,0 +1,35 @@
+#container {
+    border: solid black 1px;
+    width: 98vw;
+    height: 98vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+#header {
+    background-color: aqua;
+  }
+
+/*
+ I want 3 columns and 4 rows
+
+ I want column 1 to take up 1/4
+ I want column 2 to take up 2/4
+ I want column 3 to take up the last 1/4 of space
+*/
+
+#main {
+    border: solid red 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 6px;
+}
+
+.children {
+    background-color: black;
+}
+
+#footer {
+    background-color: green;
+}
